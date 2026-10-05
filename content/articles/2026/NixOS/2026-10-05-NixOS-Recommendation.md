@@ -1,5 +1,6 @@
 Title: NixOSの薦め
-Date: 2026-10-05
+Slug: nixos-no-susume
+Date: 2026-10-05 20:00
 Tags: blog, Linux, NixOS
 
 # NixOSを始めてみた
