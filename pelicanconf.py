@@ -51,7 +51,10 @@ ARTICLE_URL = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/"
 ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html"
 PAGE_URL = "pages/{slug}/"
 PAGE_SAVE_AS = "pages/{slug}/index.html"
-
+YEAR_ARCHIVE_SAVE_AS = "posts/{date:%Y}/index.html"
+YEAR_ARCHIVE_URL = "posts/{date:%Y}/"
+MONTH_ARCHIVE_SAVE_AS = "posts/{date:%Y}/{date:%b}/index.html"
+MONTH_ARCHIVE_URL = "posts/{date:%Y}/{date:%b}/"
 DEFAULT_LANG = "ja"
 
 LOCALE = [

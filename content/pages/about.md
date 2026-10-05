@@ -1,8 +1,7 @@
 Title: About
 Date: 2026-10-05
 Category: その他
-
-# About
+slug: about
 
 ## Myself
 
