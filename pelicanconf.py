@@ -17,11 +17,11 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = [
-    ("Github", "https://github.com/mizma"),
 ]
 
 # Social widget
 SOCIAL = [
+    ("github", "https://github.com/mizma"),
     ("twitter", "https://x.com/mizma"),
     ("bluesky", "https://bsky.app/profile/mizma.bsky.social"),
     ("Pixiv", "https://www.pixiv.net/users/30348"),
@@ -35,3 +35,4 @@ RELATIVE_URLS = True
 THEME = "theme/notmyidea-cms/"
 
 DEFAULT_CATEGORY = "その他"
+GITHUB_URL = "https://github.com/mizma/path-works.net"
