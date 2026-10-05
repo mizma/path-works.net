@@ -4,7 +4,7 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDIR=$(BASEDIR)/output/
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -74,7 +74,15 @@ publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
 ftp_upload: publish
-	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
+	@tmp=$$(mktemp); \
+	trap 'rm -f "$$tmp"' EXIT; \
+	{ \
+		echo "open ftp://$(FTP_HOST)"; \
+		printf 'user %s %s\n' "$(FTP_USER)" "$$(secret-tool lookup service lftp host $(FTP_HOST) user $(FTP_USER))"; \
+		printf 'mirror -R %s %s\n' "$(OUTPUTDIR)" "$(FTP_TARGET_DIR)"; \
+		echo "quit"; \
+	} > "$$tmp"; \
+	lftp -f "$$tmp"
 
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish ftp_upload

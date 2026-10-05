@@ -17,19 +17,21 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = [
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+    ("Github", "https://github.com/mizma"),
 ]
 
 # Social widget
 SOCIAL = [
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("twitter", "https://x.com/mizma"),
+    ("bluesky", "https://bsky.app/profile/mizma.bsky.social"),
+    ("Pixiv", "https://www.pixiv.net/users/30348"),
 ]
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
+
+THEME = "theme/pelican-themes/pelican-fh5co-marble"
+
+DEFAULT_CATEGORY = "その他"
