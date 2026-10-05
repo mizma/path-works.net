@@ -54,3 +54,5 @@ LOCALE = [
 DATE_FORMATS = {
     "ja": ("ja_JP.UTF-8", "%Y年%m月%d日 (%a)"),
 }
+
+TWITTER_USERNAME = "mizma"
