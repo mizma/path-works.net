@@ -1,3 +1,6 @@
 [submodule "theme/pelican-fh5co-marble"]
 	path = theme/pelican-fh5co-marble
 	url = git@github_mizma:claudio-walser/pelican-fh5co-marble
+[submodule "theme/pelican-mediumfox"]
+	path = theme/pelican-mediumfox
+	url = git@github_mizma:cprieto/pelican-mediumfox

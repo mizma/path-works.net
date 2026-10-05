@@ -32,6 +32,6 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-THEME = "theme/pelican-themes/pelican-fh5co-marble"
+THEME = "theme/pelican-fh5co-marble"
 
 DEFAULT_CATEGORY = "その他"
