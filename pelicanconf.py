@@ -16,7 +16,14 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = []
+LINKS = [
+    ("GP2040-CE", "https://github.com/OpenStickCommunity/GP2040-CE"),
+    ("ergoSHIFT", "https://github.com/mizma/ergoSHIFT"),
+    ("slimDASH", "https://github.com/mizma/SlimDash"),
+    ("mzm_kicad", "https://github.com/mizma/mzm_kicad"),
+    ("ani2xcurtk", "https://github.com/mizma/ani2xcurtk"),
+]
+LINKS_WIDGET_NAME = "Links"
 
 # Social widget
 SOCIAL = [
