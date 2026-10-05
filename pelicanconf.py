@@ -40,3 +40,8 @@ GITHUB_URL = "https://github.com/mizma/path-works.net"
 STATIC_PATHS = [
     "images",
 ]
+
+ARTICLE_URL = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/"
+ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html"
+PAGE_URL = "pages/{slug}/"
+PAGE_SAVE_AS = "pages/{slug}/index.html"
