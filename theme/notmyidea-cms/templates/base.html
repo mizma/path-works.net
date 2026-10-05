@@ -3,6 +3,7 @@
 <head>
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/glightbox.min.css" type="text/css" />
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
         <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
         {% if FEED_RSS %}
@@ -90,7 +91,8 @@
 
                 <p>The theme is «notmyidea-cms», a modified version of «notmyidea», the default theme.</p>
         </footer><!-- /#footer -->
-
+        <script src="{{ SITEURL }}/theme/js/glightbox.min.js"></script>
+        <script src="{{ SITEURL }}/theme/js/lightbox.js"></script>
 {% include 'analytics.html' %}
 </body>
 </html>

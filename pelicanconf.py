@@ -36,3 +36,7 @@ THEME = "theme/notmyidea-cms/"
 
 DEFAULT_CATEGORY = "その他"
 GITHUB_URL = "https://github.com/mizma/path-works.net"
+
+STATIC_PATHS = [
+    "images",
+]
