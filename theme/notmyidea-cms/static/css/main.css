@@ -302,8 +302,12 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		.social a[href*='stackoverflow.com']:before {content: url('../images/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
 		.social a[href*='rss.xml']:before {content: url('../images/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
 		.social a[href*='twitter.com']:before {content: url('../images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
+		.social a[href*='x.com']:before {content: url('../images/icons/x.png'); margin-right: 2px; vertical-align: -3px;}
 		.social a[href*='linkedin.com']:before {content: url('../images/icons/linkedin.png'); margin-right: 2px; vertical-align: -3px;}
-        .social a[href*='gitorious.org']:before {content: url('../images/icons/gitorious.png'); margin-right: 2px; vertical-align: -3px;}
+    .social a[href*='gitorious.org']:before {content: url('../images/icons/gitorious.png'); margin-right: 2px; vertical-align: -3px;}
+    .social a[href*='github.com']:before {content: url('../images/icons/github.png'); margin-right: 2px; vertical-align: -3px;}
+    .social a[href*='bsky.app']:before {content: url('../images/icons/bsky.png'); margin-right: 2px; vertical-align: -3px;}
+    .social a[href*='pixiv.net']:before {content: url('../images/icons/pixiv.png'); margin-right: 2px; vertical-align: -3px;}
 
 /*
 	About
