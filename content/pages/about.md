@@ -6,6 +6,8 @@ Category: その他
 
 ## Myself
 
+![Avatar]({attach}images/Avatar.png)
+
 * HN: 瑞真（mizma）
 * 所在: 日本のどこか
 * 趣味: コーヒー、漫画・ラノベ、絵描き、ゲーム、写真、テクノロジー
