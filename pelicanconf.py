@@ -1,12 +1,12 @@
-AUTHOR = 'aoi.mizma'
-SITENAME = 'path-works.net'
+AUTHOR = "aoi.mizma"
+SITENAME = "path-works.net"
 SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'Asia/Tokyo'
+TIMEZONE = "Asia/Tokyo"
 
-DEFAULT_LANG = 'ja'
+DEFAULT_LANG = "ja"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -16,8 +16,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = [
-]
+LINKS = []
 
 # Social widget
 SOCIAL = [
@@ -45,3 +44,13 @@ ARTICLE_URL = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/"
 ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html"
 PAGE_URL = "pages/{slug}/"
 PAGE_SAVE_AS = "pages/{slug}/index.html"
+
+DEFAULT_LANG = "ja"
+
+LOCALE = [
+    "ja_JP.UTF-8"
+]
+
+DATE_FORMATS = {
+    "ja": ("ja_JP.UTF-8", "%Y年%m月%d日 (%a)"),
+}
