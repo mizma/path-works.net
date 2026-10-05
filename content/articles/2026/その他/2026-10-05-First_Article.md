@@ -1,6 +1,5 @@
 Title: First Article
 Date: 2026-10-05
-Category: その他
 Tags: blog
 
 # Placeholder
