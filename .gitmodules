@@ -1,3 +1,0 @@
-[submodule "theme/--force"]
-	path = theme/--force
-	url = git@github_mizma:getpelican/pelican-themes.git
