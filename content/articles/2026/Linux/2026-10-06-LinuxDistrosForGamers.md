@@ -379,7 +379,7 @@ AURについては信用のならないソフトウェアであることを十�
 
 学習コストを払えるのであれば最強格のDistro。
 
-### 私のが使ってるNixOSはどうなんじゃい？
+### 私が使ってるNixOSはどうなんじゃい？
 
 ![NixOS](/images/DistroSea/nixos-hyprland.jpg)
 
