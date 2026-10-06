@@ -116,8 +116,9 @@ pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: 
 
 /* Quotes */
 blockquote {
-    margin: 20px;
+    margin: 20px 40px;
     font-style: italic;
+    color: #6B5950;
 }
 cite {}
 
