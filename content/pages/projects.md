@@ -20,9 +20,12 @@ Slug: projects
 | [GP2040-CE] | RP2040 マイコン向け自作アケコン用ファームウェア | Web Config日本語翻訳 |
 | [ani2xcurtk] | Windowsカーソル→Xcursor変換ツール | 自作 |
 
-
 [ergoSHIFT]: https://github.com/mizma/ergoSHIFT
+
 [slimDASH]: https://github.com/mizma/SlimDash
+
 [mzm_kicad]: https://github.com/mizma/mzm_kicad
+
 [GP2040-CE]: https://github.com/OpenStickCommunity/GP2040-CE
+
 [ani2xcurtk]: https://github.com/mizma/ani2xcurtk

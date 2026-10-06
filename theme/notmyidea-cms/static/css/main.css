@@ -11,15 +11,16 @@
 @import url("reset.css");
 @import url("pygment.css");
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
+@import url(https://fonts.googleapis.com/css2?family=LINE+Seed+JP&family=WDXL+Lubrifont+JP+N&family=Yusei+Magic&display=swap);
 
 /***** Global *****/
 /* Body */
 body {
     background: #F5F4EF;
     color: #000305;
-    font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.429;
+    font-size: 100%; /* Base font size: 14px */
+    font-family: 'LINE Seed JP', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -39,10 +40,14 @@ h6 {font-size: 1em}		/* 14px */
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
-	line-height: 1.1;
+	line-height: 1.2;
 	margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-family: 'Yanone Kaffeesatz', 'WDXL Lubrifont JP N', arial, serif;
   color: #89260D;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Yusei Magic', arial, serif;
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
@@ -89,9 +94,12 @@ ol {
 }
 
 .post-info {
+    max-width: 40%;
     float:right;
     margin:10px;
     padding:5px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .post-info p{
@@ -359,7 +367,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .entry-title a:visited {background-color: #fff;}
 
 .article-content img,
-.entry-content img {
+.entry-content img,
+#featured article img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -436,3 +445,115 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
+
+.article-content,
+.entry-content,
+#featured {
+  padding: 0px 20px;
+}
+
+/* Inline code */
+.article-content code,
+.entry-content code,
+#featured article code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                 Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9em;
+    padding: 0.15em 0.3em;
+    border-radius: 4px;
+    background: #f6f8fa;
+    color: #24292f;
+}
+
+/* Don't apply inline-code styling to code blocks */
+.article-content pre code,
+.entry-content pre code,
+#featured article pre code {
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* Code blocks */
+.article-content pre,
+.entry-content pre,
+#featured article pre {
+    margin: 1.25em 0;
+    padding: 1em 1.2em;
+    overflow-x: auto;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    background: #f6f8fa;
+    color: #24292f;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                 Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Pygments output */
+.article-content .codehilite,
+.entry-content .codehilite,
+#featured article .codehilite {
+    margin: 1.25em 0;
+    overflow-x: auto;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    background: #f6f8fa;
+}
+
+.article-content .codehilite pre,
+.entry-content .codehilite pre,
+#featured article .codehilite pre {
+    margin: 0;
+    padding: 1em 1.2em;
+    border: 0;
+    background: transparent;
+}
+
+/* Tag Clouds */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
+}
+
+.tag-cloud .tag {
+    text-decoration: none;
+}
+
+.tag-cloud .tag-1 {
+    font-size: 0.85rem;
+}
+
+.tag-cloud .tag-2 {
+    font-size: 0.95rem;
+}
+
+.tag-cloud .tag-3 {
+    font-size: 1.05rem;
+}
+
+.tag-cloud .tag-4 {
+    font-size: 1.15rem;
+}
+
+.tag-cloud .tag-5,
+.tag-cloud .tag-6,
+.tag-cloud .tag-7,
+.tag-cloud .tag-8,
+.tag-cloud .tag-9 {
+    font-size: 1.3rem;
+}
+
+.tag-cloud .tag-10,
+.tag-cloud .tag-11,
+.tag-cloud .tag-12 {
+    font-size: 1.5rem;
+}
+
+.tag-cloud .tag span {
+    font-size: 0.75em;
+}

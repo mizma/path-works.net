@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content_title %}{% endblock %}
+
+{% block content %}
+<section id="content" class="body">
+  <aside id="featured">
+    <article>
+      <h1>Tags</h1>
+
+      <div class="tag-cloud">
+          {% for tag, articles in tags|sort(attribute="0.name") %}
+              <a href="{{ SITEURL }}/{{ tag.url }}"
+                class="tag tag-{{ articles|length }}">
+                  {{ tag }}
+                  <span>({{ articles|length }})</span>
+              </a>
+          {% endfor %}
+      </div>
+    </article>
+  </aside>
+</section>
+{% endblock content %}

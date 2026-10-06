@@ -51,6 +51,7 @@ ARTICLE_URL = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/"
 ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html"
 PAGE_URL = "pages/{slug}/"
 PAGE_SAVE_AS = "pages/{slug}/index.html"
+ARCHIVES_URL = "archives.html"
 YEAR_ARCHIVE_SAVE_AS = "posts/{date:%Y}/index.html"
 YEAR_ARCHIVE_URL = "posts/{date:%Y}/"
 MONTH_ARCHIVE_SAVE_AS = "posts/{date:%Y}/{date:%b}/index.html"
@@ -66,3 +67,13 @@ DATE_FORMATS = {
 }
 
 TWITTER_USERNAME = "mizma"
+
+MARKDOWN = {
+    "extensions": [
+        "extra",
+        "codehilite",
+        "fenced_code",
+        "attr_list",
+        "extensions.japanese_linebreaks",
+    ]
+}
