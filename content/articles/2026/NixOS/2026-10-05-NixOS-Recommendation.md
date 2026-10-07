@@ -7,7 +7,7 @@ Tags: blog, Linux, NixOS
 
 最近時家のPCをEndeavourOSからNixOSに移行したので、なぜそうしたのかとか諸々を残す予定
 
-![NixOS Desktop with Noctalia]({attach}images/2026-10-05-Desktop.jpg)
+![NixOS Desktop with Noctalia](/images/2026/2026-10-05-Desktop.jpg)
 
 ## きっかけ
 
